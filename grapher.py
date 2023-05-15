@@ -29,7 +29,7 @@ if opcion == 1:
     columnas = input("Ingrese las columnas que desea utilizar separadas por comas: ").split(",")
     color_variable = input("Ingrese un color en inglés: ").split(",")
     # Generar el histograma
-    data.hist(column=columnas, bins=bins,color=color_variable,facecolor='lightgray')
+    data.hist(column=columnas, bins=bins,color=color_variable,edgecolor='black')
     #Crear el nombre para el gráfico generado
     nombre_img = input("Escriba el nombre con el que quira que se guarde la gráfica: ")
     extension_img = input("Escriba la extension con la que quiera que se guarde la imagen (.png o .jpg): ")
@@ -43,7 +43,7 @@ elif opcion == 2:
     columnas = input("Ingrese las columnas que desea utilizar separadas por comas: ").split(",")
     color_variable = input("Ingrese un color en inglés: ").split(",")
     # Generar el gráfico de barras
-    data.plot.bar(x=columnas[0], y=columnas[1],color=color_variable)
+    data.plot.bar(x=columnas[0], y=columnas[1],color=color_variable,edgecolor='black')
     #Crear el nombre para el gráfico generado
     nombre_img = input("Escriba el nombre con el que quira que se guarde la gráfica: ")
     extension_img = input("Escriba la extension con la que quiera que se guarde la imagen (.png o .jpg): ")
@@ -57,7 +57,7 @@ elif opcion == 3:
     columnas = input("Ingrese las columnas que desea utilizar separadas por comas: ").split(",")
     color_variable = input("Ingrese un color en inglés: ").split(",")
     # Generar el gráfico de dispersión
-    data.plot.scatter(x=columnas[0], y=columnas[1],color=color_variable)
+    data.plot.scatter(x=columnas[0], y=columnas[1],color=color_variable,edgecolor='black')
     #Crear el nombre para el gráfico generado
     nombre_img = input("Escriba el nombre con el que quira que se guarde la gráfica: ")
     extension_img = input("Escriba la extension con la que quiera que se guarde la imagen (.png o .jpg): ")
